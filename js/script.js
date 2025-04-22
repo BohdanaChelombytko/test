@@ -1,21 +1,15 @@
-"use strict";
-// alert("Hello");
-// const result = confirm("Are you here?");
-// console.log(result);
-// const answer = prompt("Are you 18?", "18");
-// console.log(typeof (answer));
-
-
-// const answers = [];
-// answers[0] = prompt("What is your first name?", "");
-// answers[1] = prompt("What is your second name?", "");
-// answers[2] = prompt("How old are you", "");
-// document.write(answers);
-
-let incr = 10,
-    decr = 10;
-incr++;
-decr--;
-console.log(incr);
-console.log(decr);
-
+const number0fFilms = +prompt('How many films have you watched?', '');
+const personalMovieDB = {
+    count: number0fFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+const a = prompt('Last film?', ''),
+    b = prompt('How much do you like it?', ''),
+    c = prompt('Last film?', ' '),
+    d = prompt('How much do you like it?', '');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
